@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{F35C8066-E824-F1B2-4398-A360D158010C}</ProjectGuid>
+	<ProjectGuid>{18DEBD98-220F-C295-F048-EF9043964E04}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -75,13 +75,13 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Qualcomm.Vuforia.UnityExtensions.Editor">
- <HintPath>C:/Users/surrealismo/Desktop/DEMO_RA/Assets/Editor/QCAR/Scripts/Qualcomm.Vuforia.UnityExtensions.Editor.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Assets/Editor/QCAR/Scripts/Qualcomm.Vuforia.UnityExtensions.Editor.dll</HintPath>
  </Reference>
  <Reference Include="SQLite4Unity3d">
- <HintPath>C:/Users/surrealismo/Desktop/DEMO_RA/Assets/Plugins/SQLite4Unity3d.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Assets/Plugins/SQLite4Unity3d.dll</HintPath>
  </Reference>
  <Reference Include="Qualcomm.Vuforia.UnityExtensions">
- <HintPath>C:/Users/surrealismo/Desktop/DEMO_RA/Assets/Qualcomm Augmented Reality/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Assets/Qualcomm Augmented Reality/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>

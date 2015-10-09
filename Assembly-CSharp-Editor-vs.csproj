@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{D5C0DB3E-1DD4-CA12-5B90-7DD65FEBC0D2}</ProjectGuid>
+	<ProjectGuid>{5E1840D9-2953-3980-A918-B3ACC18AD647}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -62,7 +62,7 @@
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\Text3D.shader" />
      <None Include="Assets\Resources\Tutorial\Fase2.txt" />
  <Reference Include="Assembly-UnityScript-Editor-firstpass">
- <HintPath>C:/Users/surrealismo/Desktop/DEMO_RA/Library/ScriptAssemblies/Assembly-UnityScript-Editor-firstpass.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Library/ScriptAssemblies/Assembly-UnityScript-Editor-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -80,13 +80,13 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Qualcomm.Vuforia.UnityExtensions.Editor">
- <HintPath>C:/Users/surrealismo/Desktop/DEMO_RA/Assets/Editor/QCAR/Scripts/Qualcomm.Vuforia.UnityExtensions.Editor.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Assets/Editor/QCAR/Scripts/Qualcomm.Vuforia.UnityExtensions.Editor.dll</HintPath>
  </Reference>
  <Reference Include="SQLite4Unity3d">
- <HintPath>C:/Users/surrealismo/Desktop/DEMO_RA/Assets/Plugins/SQLite4Unity3d.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Assets/Plugins/SQLite4Unity3d.dll</HintPath>
  </Reference>
  <Reference Include="Qualcomm.Vuforia.UnityExtensions">
- <HintPath>C:/Users/surrealismo/Desktop/DEMO_RA/Assets/Qualcomm Augmented Reality/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Assets/Qualcomm Augmented Reality/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -127,7 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{0A5E8452-4C3B-3942-97D8-5F70D4729D96}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+      <Project>{8AABCD56-B63A-694B-F1E1-73CD39305447}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
