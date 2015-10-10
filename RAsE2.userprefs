@@ -1,8 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Escripts\MostrarDatosGPS.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Escripts\DatosVuforia.cs">
     <Files>
-      <File FileName="Assets\Escripts\MostrarDatosGPS.cs" Line="98" Column="24" />
+      <File FileName="Assets\Escripts\CambiarObj3d.cs" Line="40" Column="43" />
+      <File FileName="..\ProjectRA\Assets\Scripts\Fase2\3D\SeleccionDeColor.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MoverRotarObjeto3d.cs" Line="1" Column="1" />
+      <File FileName="Assets\Escripts\MostrarDatosGPS.cs" Line="42" Column="72" />
+      <File FileName="Assets\Escripts\SalvarObjeto3D.cs" Line="14" Column="3" />
+      <File FileName="Assets\scriptBD\datos.cs" Line="1" Column="1" />
+      <File FileName="Assets\scriptBD\ServicioDatos.cs" Line="1" Column="1" />
+      <File FileName="Assets\link.xml" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Tutorial\Fase2.txt" Line="1" Column="1" />
+      <File FileName="Assets\Escripts\DatosVuforia.cs" Line="89" Column="73" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
