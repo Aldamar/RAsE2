@@ -3,13 +3,14 @@ using System.Collections;
 using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 
 public class MostrarDatosGPS : MonoBehaviour {
 	public Text latitudObj;
 	public Text longitudObj;
 	public float tiempo = 0f;
-	public string opcion = "2d";
+	public string opcion = "3d";
 	public string imagen = "imagen";
 	public Text botonOpcion;
 	public GameObject central ;
@@ -22,6 +23,7 @@ public class MostrarDatosGPS : MonoBehaviour {
 	public string posicion = "0,0,0";
 	public string rotacion = "0,0,0";
 	public string escala = "0,0,0";
+	public GameObject tmp;
 
 	//public GameObject objetoActual;
 	public MoverRotarObjeto3d componenteObjeto;
@@ -29,22 +31,40 @@ public class MostrarDatosGPS : MonoBehaviour {
 	public string[] posiciones;
 	public string[] rotaciones;
 	public string[] escalas;
+
+
+	private int bandera;
+	private string ruta;
 	// Use this for initialization
 	void Awake () {
 		Input.location.Start ();
 		componenteObjeto= GetComponent<MoverRotarObjeto3d>();
 
 	}
+
+	void Start()
+	{
+		ruta = Application.persistentDataPath;
+		ruta += "/Resources/";
+		if (!Directory.Exists (ruta+"3d")) {
+			Directory.CreateDirectory (ruta+"3d");
+		}
+		if (!Directory.Exists (ruta+"2d")) {
+			Directory.CreateDirectory (ruta+"2d");
+		}
+	}
 	
 	// Update is called once per frame
 public void datosGPS () {
-			latitudObj.text = "Latitud: " + Input.location.lastData.latitude;
-			longitudObj.text = "Longitud: " + Input.location.lastData.longitude;
+//			latitudObj.text = "Latitud: " + Input.location.lastData.latitude;
+//			longitudObj.text = "Longitud: " + Input.location.lastData.longitude;
+		bandera = 1;
 		}
 
 	 void Update () {
-		tiempo += Time.deltaTime ;
-		if (tiempo > 0.5f) {
+		ruta += opcion;
+		//tiempo += Time.deltaTime ;
+		if (/*tiempo > 0.5f*/ bandera == 1) {
 			latitudObj.text = "Latitud: " + Input.location.lastData.latitude;
 			longitudObj.text = "Longitud: " + Input.location.lastData.longitude;
 			if (componenteObjeto!=null) {
@@ -59,6 +79,7 @@ public void datosGPS () {
 	}
 
 	public void GuardarDatos() {
+//		UnityEditor.PrefabUtility.CreatePrefab(ruta,tmp);
 		var sd = new ServicioDatos ("ejemplo.db");
 		sd.CrearBD (imagen, opcion,  Input.location.lastData.latitude,Input.location.lastData.longitude,posicion,rotacion,escala);
 //		var dato = sd.ObtenerDato ();
@@ -100,9 +121,12 @@ public void datosGPS () {
 			rotacion=datitos.rotacion;
 			escala=datitos.escala;
 			ToGet(datitos.ToString());
-			if (opcion == "2d") {
+			if (opcion == "2d") 
+			{
 				MostrarImagen2d(imagen,posicion,rotacion,escala);
-			} else {
+			} 
+			if(opcion == "3d") 
+			{
 				MostrarObjecto3d(imagen,posicion,rotacion,escala);
 				//Destroy(GameObject.FindGameObjectWithTag ("objeto3d"));
 			}

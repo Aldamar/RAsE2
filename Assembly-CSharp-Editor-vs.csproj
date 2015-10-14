@@ -46,6 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Assets\Plugins\Editor\OpenUnityTools\unityserializer-ng\EditPrefabIdentifier.cs" />
+     <Compile Include="Assets\Assets\Plugins\Editor\OpenUnityTools\unityserializer-ng\EditSaveGameManager.cs" />
+     <Compile Include="Assets\Assets\Plugins\Editor\OpenUnityTools\unityserializer-ng\EditStoreInformation.cs" />
+     <Compile Include="Assets\Assets\Plugins\Editor\OpenUnityTools\unityserializer-ng\ShaderDB\ShaderDBGenerator.cs" />
+     <Compile Include="Assets\Assets\Plugins\Editor\OpenUnityTools\unityserializer-ng\StoreMaterialsEditor.cs" />
+     <Compile Include="Assets\Assets\Plugins\Editor\OpenUnityTools\unityserializer-ng\UnitySerializerWindow.cs" />
      <Compile Include="Assets\Editor\QCAR\Scripts\ComponentFactoryStarter\ComponentFactoryStarter.cs" />
      <Compile Include="Assets\Editor\QCAR\Scripts\ExtensionImport.cs" />
      <Compile Include="Assets\Editor\QCAR\Scripts\Unzipper\SharpZipLibUnzipper.cs" />
@@ -57,12 +63,14 @@
      <None Include="Assets\Editor\QCAR\WebcamProfiles\profiles.xml" />
      <None Include="Assets\readme_SDK.txt" />
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\DepthMask.shader" />
+     <None Include="Assets\Assets\Plugins\OpenUnityTools\unityserializer-ng\license.txt" />
      <None Include="Assets\link.xml" />
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\BrightTexture.shader" />
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\Text3D.shader" />
+     <None Include="Assets\Assets\UnitySerializerExamples\readme.txt" />
      <None Include="Assets\Resources\Tutorial\Fase2.txt" />
  <Reference Include="Assembly-UnityScript-Editor-firstpass">
- <HintPath>C:/Users/Emmanuel/Documents/GitHub/RAsE2/Library/ScriptAssemblies/Assembly-UnityScript-Editor-firstpass.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Library/ScriptAssemblies/Assembly-UnityScript-Editor-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -80,13 +88,13 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Qualcomm.Vuforia.UnityExtensions.Editor">
- <HintPath>C:/Users/Emmanuel/Documents/GitHub/RAsE2/Assets/Editor/QCAR/Scripts/Qualcomm.Vuforia.UnityExtensions.Editor.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Assets/Editor/QCAR/Scripts/Qualcomm.Vuforia.UnityExtensions.Editor.dll</HintPath>
  </Reference>
  <Reference Include="SQLite4Unity3d">
- <HintPath>C:/Users/Emmanuel/Documents/GitHub/RAsE2/Assets/Plugins/SQLite4Unity3d.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Assets/Plugins/SQLite4Unity3d.dll</HintPath>
  </Reference>
  <Reference Include="Qualcomm.Vuforia.UnityExtensions">
- <HintPath>C:/Users/Emmanuel/Documents/GitHub/RAsE2/Assets/Qualcomm Augmented Reality/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Assets/Qualcomm Augmented Reality/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
