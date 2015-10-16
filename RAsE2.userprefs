@@ -1,8 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Escripts\MostrarDatosGPS.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Escripts\CrearCarrete.cs">
     <Files>
-      <File FileName="Assets\Escripts\MostrarDatosGPS.cs" Line="82" Column="3" />
+      <File FileName="Assets\Escripts\CambiarObj3d.cs" Line="24" Column="22" />
+      <File FileName="Assets\Escripts\MostrarDatosGPS.cs" Line="1" Column="1" />
+      <File FileName="Assets\Escripts\CrearCarrete.cs" Line="71" Column="4" />
+      <File FileName="Assets\scriptBD\ServicioDatos.cs" Line="71" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

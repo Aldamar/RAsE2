@@ -31,6 +31,10 @@ public class MostrarDatosGPS : MonoBehaviour {
 	public string[] posiciones;
 	public string[] rotaciones;
 	public string[] escalas;
+	public string colorR;
+	public string colorG;
+	public string colorB;
+	public string colorA;
 
 
 	private int bandera;
@@ -44,6 +48,7 @@ public class MostrarDatosGPS : MonoBehaviour {
 
 	void Start()
 	{
+		bandera = 1;
 		ruta = Application.persistentDataPath;
 		ruta += "/Resources/";
 		if (!Directory.Exists (ruta+"3d")) {
@@ -71,7 +76,12 @@ public void datosGPS () {
 				if (componenteObjeto.objeto != null) {
 					posicion = componenteObjeto.objeto.transform.position.ToString("G4");
 					rotacion = componenteObjeto.objeto.transform.rotation.ToString("G4");
-					escala = componenteObjeto.objeto.transform.localScale.ToString("G4");;
+					escala = componenteObjeto.objeto.transform.localScale.ToString("G4");
+					colorR = componenteObjeto.objeto.GetComponent<Renderer>().material.color.r.ToString("G4");
+					colorG = componenteObjeto.objeto.GetComponent<Renderer>().material.color.g.ToString("G4");
+					colorB = componenteObjeto.objeto.GetComponent<Renderer>().material.color.b.ToString("G4");
+					colorA = componenteObjeto.objeto.GetComponent<Renderer>().material.color.a.ToString("G4");
+
 				}
 			}
 			tiempo = 0;
@@ -81,7 +91,7 @@ public void datosGPS () {
 	public void GuardarDatos() {
 //		UnityEditor.PrefabUtility.CreatePrefab(ruta,tmp);
 		var sd = new ServicioDatos ("ejemplo.db");
-		sd.CrearBD (imagen, opcion,  Input.location.lastData.latitude,Input.location.lastData.longitude,posicion,rotacion,escala);
+		sd.CrearBD (imagen, opcion,  Input.location.lastData.latitude,Input.location.lastData.longitude,posicion,rotacion,escala,colorR,colorG,colorB,colorA);
 //		var dato = sd.ObtenerDato ();
 	//	aConsol (dato);
 
@@ -120,6 +130,10 @@ public void datosGPS () {
 			posicion=datitos.posicion;
 			rotacion=datitos.rotacion;
 			escala=datitos.escala;
+			colorR = datitos.colorR;
+			colorG = datitos.colorG;
+			colorB = datitos.colorB;
+			colorA = datitos.colorA;
 			ToGet(datitos.ToString());
 			if (opcion == "2d") 
 			{
@@ -127,7 +141,7 @@ public void datosGPS () {
 			} 
 			if(opcion == "3d") 
 			{
-				MostrarObjecto3d(imagen,posicion,rotacion,escala);
+				MostrarObjecto3d(imagen,posicion,rotacion,escala,colorR,colorB,colorG,colorA);
 				//Destroy(GameObject.FindGameObjectWithTag ("objeto3d"));
 			}
 		}
@@ -152,7 +166,7 @@ public void datosGPS () {
 		  	
 	}
 
-	public void MostrarObjecto3d(string nombre,string posicion,string rotacion, string escala) {
+	public void MostrarObjecto3d(string nombre,string posicion,string rotacion, string escala,string colorR,string colorG,string colorB,string colorA) {
 		objetos3d = Resources.LoadAll<GameObject> ("3d"); 
 		Vector3 posicionIns= new Vector3(0,0,0);
 		Quaternion rotacionIns= Quaternion.identity;
@@ -176,10 +190,12 @@ public void datosGPS () {
 					escalas = escala.Split(separadores, StringSplitOptions.RemoveEmptyEntries);
 					escalaIns = new Vector3(float.Parse(escalas[0]),float.Parse(escalas[1]),float.Parse(escalas[2]));
 				}
+
 //					Debug.Log(posicion.Split(separadores, StringSplitOptions.RemoveEmptyEntries));
 				//Debug.Log(rotacion.Split(','));
 				GameObject objetoClon = Instantiate(objetos3d [i], posicionIns , rotacionIns) as GameObject;
 				objetoClon.transform.localScale = escalaIns;
+				objetoClon.GetComponent<Renderer>().material.color = new Color(float.Parse(colorR),float.Parse(colorG),float.Parse(colorB),float.Parse(colorA));
 				//Instantiate(objetos3d [i], objetoBase3d.transform.position ,objetoBase3d.transform.rotation);
 				objetoBase3d = objetos3d [i];
 			//objetos3d[indice].gameObject = objetoCarrete.objetos3d [indice];
