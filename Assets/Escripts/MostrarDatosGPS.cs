@@ -35,19 +35,22 @@ public class MostrarDatosGPS : MonoBehaviour {
 	public string colorG;
 	public string colorB;
 	public string colorA;
+	public string descripcion;
 
+	public Text TExtoObjeto;
+	public InputField CampoDeTexto;
 
 	private int bandera;
 	private string ruta;
 	// Use this for initialization
+
 	void Awake () {
-		Input.location.Start ();
-		componenteObjeto= GetComponent<MoverRotarObjeto3d>();
+				Input.location.Start ();
+				componenteObjeto= GetComponent<MoverRotarObjeto3d>();
 
-	}
+			}
 
-	void Start()
-	{
+	void Start () {
 		bandera = 1;
 		ruta = Application.persistentDataPath;
 		ruta += "/Resources/";
@@ -58,20 +61,25 @@ public class MostrarDatosGPS : MonoBehaviour {
 			Directory.CreateDirectory (ruta+"2d");
 		}
 	}
+
+
+
 	
 	// Update is called once per frame
 public void datosGPS () {
-//			latitudObj.text = "Latitud: " + Input.location.lastData.latitude;
-//			longitudObj.text = "Longitud: " + Input.location.lastData.longitude;
+			latitudObj.text = "Latitud: " + Input.location.lastData.latitude;
+			longitudObj.text = "Longitud: " + Input.location.lastData.longitude;
 		bandera = 1;
 		}
 
 	 void Update () {
 		ruta += opcion;
-		//tiempo += Time.deltaTime ;
-		if (/*tiempo > 0.5f*/ bandera == 1) {
+		tiempo += Time.deltaTime ;
+		if (tiempo > 0.5f /*bandera == 1*/) {
+			Debug.Log("Si entro");
 			latitudObj.text = "Latitud: " + Input.location.lastData.latitude;
 			longitudObj.text = "Longitud: " + Input.location.lastData.longitude;
+			Debug.Log(Input.location.lastData.latitude);
 			if (componenteObjeto!=null) {
 				if (componenteObjeto.objeto != null) {
 					posicion = componenteObjeto.objeto.transform.position.ToString("G4");
@@ -81,6 +89,7 @@ public void datosGPS () {
 					colorG = componenteObjeto.objeto.GetComponent<Renderer>().material.color.g.ToString("G4");
 					colorB = componenteObjeto.objeto.GetComponent<Renderer>().material.color.b.ToString("G4");
 					colorA = componenteObjeto.objeto.GetComponent<Renderer>().material.color.a.ToString("G4");
+					descripcion = CampoDeTexto.text;
 
 				}
 			}
@@ -91,7 +100,7 @@ public void datosGPS () {
 	public void GuardarDatos() {
 //		UnityEditor.PrefabUtility.CreatePrefab(ruta,tmp);
 		var sd = new ServicioDatos ("ejemplo.db");
-		sd.CrearBD (imagen, opcion,  Input.location.lastData.latitude,Input.location.lastData.longitude,posicion,rotacion,escala,colorR,colorG,colorB,colorA);
+		sd.CrearBD (imagen, opcion,  Input.location.lastData.latitude,Input.location.lastData.longitude,posicion,rotacion,escala,colorR,colorG,colorB,colorA,descripcion);
 //		var dato = sd.ObtenerDato ();
 	//	aConsol (dato);
 
@@ -134,6 +143,7 @@ public void datosGPS () {
 			colorG = datitos.colorG;
 			colorB = datitos.colorB;
 			colorA = datitos.colorA;
+			descripcion = datitos.descripcion;
 			ToGet(datitos.ToString());
 			if (opcion == "2d") 
 			{
@@ -141,7 +151,7 @@ public void datosGPS () {
 			} 
 			if(opcion == "3d") 
 			{
-				MostrarObjecto3d(imagen,posicion,rotacion,escala,colorR,colorB,colorG,colorA);
+				MostrarObjecto3d(imagen,posicion,rotacion,escala,colorR,colorB,colorG,colorA,descripcion);
 				//Destroy(GameObject.FindGameObjectWithTag ("objeto3d"));
 			}
 		}
@@ -166,7 +176,7 @@ public void datosGPS () {
 		  	
 	}
 
-	public void MostrarObjecto3d(string nombre,string posicion,string rotacion, string escala,string colorR,string colorG,string colorB,string colorA) {
+	public void MostrarObjecto3d(string nombre,string posicion,string rotacion, string escala,string colorR,string colorG,string colorB,string colorA, string descripcion) {
 		objetos3d = Resources.LoadAll<GameObject> ("3d"); 
 		Vector3 posicionIns= new Vector3(0,0,0);
 		Quaternion rotacionIns= Quaternion.identity;
@@ -198,6 +208,7 @@ public void datosGPS () {
 				objetoClon.GetComponent<Renderer>().material.color = new Color(float.Parse(colorR),float.Parse(colorG),float.Parse(colorB),float.Parse(colorA));
 				//Instantiate(objetos3d [i], objetoBase3d.transform.position ,objetoBase3d.transform.rotation);
 				objetoBase3d = objetos3d [i];
+				TExtoObjeto.text = descripcion;
 			//objetos3d[indice].gameObject = objetoCarrete.objetos3d [indice];
 			}
 		

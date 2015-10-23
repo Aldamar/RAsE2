@@ -53,7 +53,7 @@ public class ServicioDatos {
 		Debug.Log("Final PATH: " + dbPath);     
 
 	}
-	public void CrearBD(string img, string tip, float lat, float lon, string pos, string rot, string esc,string c1,string c2,string c3,string c4){
+	public void CrearBD(string img, string tip, float lat, float lon, string pos, string rot, string esc,string c1,string c2,string c3,string c4, string desc){
 		//_conexion.DropTable<datos> ();
 		_conexion.CreateTable<datos> ();
 		_conexion.InsertAll (new [] {
@@ -69,6 +69,7 @@ public class ServicioDatos {
 				colorG = c2,
 				colorB = c3,
 				colorA = c4,
+				descripcion=desc,
 			}
 
 		});

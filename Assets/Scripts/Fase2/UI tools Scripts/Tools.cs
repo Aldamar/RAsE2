@@ -149,13 +149,18 @@ public class Tools : MonoBehaviour
 			imagenAEditar[0].transform.SetParent(tmp.transform);
 		}
 		if (opcionPanel.opcion == 5) {
+			Vector3 theScale = imagenAEditar[0].transform.localScale;
+			theScale.x *= -1;
+			imagenAEditar[0].transform.localScale = theScale;
+
+			/*
 			if(imagenAEditar[0].transform.rotation.y == 180)
 			{
 				imagenAEditar[0].transform.eulerAngles = new Vector3(0f,0f,0f);
 			}else
 			{
 				imagenAEditar[0].transform.eulerAngles = new Vector3(0f,180f,0f);
-			}
+			}*/
 		}
 		if (opcionPanel.opcion == 6) {
 

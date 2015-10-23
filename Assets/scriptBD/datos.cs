@@ -14,9 +14,10 @@ public class datos {
 	public string colorG{ get; set; }
 	public string colorB { get; set; }
 	public string colorA { get; set; }
+	public string descripcion { get; set; }
 	
 	public override string ToString ()
 	{
-		return string.Format ("[datos: imagen={0}, latitud={1},  longitud={2}, tipo={3}, posicion={4}, rotacion={5},escala={6}, colorR{7}],colorG{8},colorB{9},colorA{10}", imagen, latitud, longitud, tipo, posicion, rotacion,escala,colorR,colorG,colorB,colorA);
+		return string.Format ("[datos: imagen={0}, latitud={1},  longitud={2}, tipo={3}, posicion={4}, rotacion={5},escala={6}, colorR{7}],colorG{8},colorB{9},colorA{10}, descripcion{11}", imagen, latitud, longitud, tipo, posicion, rotacion,escala,colorR,colorG,colorB,colorA,descripcion);
 	}
 }

@@ -1,11 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Escripts\CrearCarrete.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\ProjectRA\Assets\Scripts\Fase2\UI tools Scripts\Tools.cs">
     <Files>
-      <File FileName="Assets\Escripts\CambiarObj3d.cs" Line="24" Column="22" />
-      <File FileName="Assets\Escripts\MostrarDatosGPS.cs" Line="1" Column="1" />
-      <File FileName="Assets\Escripts\CrearCarrete.cs" Line="71" Column="4" />
-      <File FileName="Assets\scriptBD\ServicioDatos.cs" Line="71" Column="17" />
+      <File FileName="..\ProjectRA\Assets\Scripts\Fase2\UI tools Scripts\botones.cs" Line="1" Column="1" />
+      <File FileName="..\ProjectRA\Assets\Scripts\Fase2\UI tools Scripts\Tools.cs" Line="32" Column="5" />
+      <File FileName="..\ProjectRA\Assets\Scripts\Fase2\Slot.cs" Line="21" Column="1" />
+      <File FileName="..\ProjectRA\Assets\Scripts\Fase2\Bandera.cs" Line="1" Column="1" />
+      <File FileName="..\ProjectRA\Assets\Scripts\Fase4B\DropItSlot.cs" Line="21" Column="4" />
+      <File FileName="..\ProjectRA\Assets\Scripts\Fase2\CargarImgs.cs" Line="25" Column="3" />
+      <File FileName="..\ProjectRA\Assets\Scripts\Fase2\DragHandeler.cs" Line="124" Column="49" />
+      <File FileName="..\ProjectRA\Assets\Scripts\Fase2\3D\Gestos.cs" Line="9" Column="67" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
