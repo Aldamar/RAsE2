@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{8AABCD56-B63A-694B-F1E1-73CD39305447}</ProjectGuid>
+	<ProjectGuid>{427B7C6A-F335-7A40-C4A0-EB07CA993846}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_5_1_0;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;VUFORIA_ANDROID_SETTINGS</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_1_0;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;VUFORIA_ANDROID_SETTINGS</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,13 +46,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Abrir.cs" />
      <Compile Include="Assets\Drag3D.cs" />
+     <Compile Include="Assets\Escripts\AudiAReproducir.cs" />
      <Compile Include="Assets\Escripts\CambiarImagen.cs" />
      <Compile Include="Assets\Escripts\CambiarObj3d.cs" />
+     <Compile Include="Assets\Escripts\CargarAudios.cs" />
      <Compile Include="Assets\Escripts\CargarImg.cs" />
      <Compile Include="Assets\Escripts\CrearCarrete.cs" />
      <Compile Include="Assets\Escripts\D3D.cs" />
      <Compile Include="Assets\Escripts\DatosVuforia.cs" />
+     <Compile Include="Assets\Escripts\Dragler.cs" />
+     <Compile Include="Assets\Escripts\GuardarEval.cs" />
      <Compile Include="Assets\Escripts\Gyro.cs" />
      <Compile Include="Assets\Escripts\LINK1.cs" />
      <Compile Include="Assets\Escripts\MostrarCamara.cs" />
@@ -64,6 +69,10 @@
      <Compile Include="Assets\Escripts\TExto.cs" />
      <Compile Include="Assets\Escripts\WebCameraScript.cs" />
      <Compile Include="Assets\Escripts\servicioUbicacion.cs" />
+     <Compile Include="Assets\GuardarDatos.cs" />
+     <Compile Include="Assets\Limpiar.cs" />
+     <Compile Include="Assets\LoadScne.cs" />
+     <Compile Include="Assets\Pantalla.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\BackgroundPlaneBehaviour.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\CloudRecoBehaviour.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\CylinderTargetBehaviour.cs" />
@@ -100,10 +109,15 @@
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\WireframeBehaviour.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\WireframeTrackableEventHandler.cs" />
      <Compile Include="Assets\Qualcomm Augmented Reality\Scripts\WordBehaviour.cs" />
+     <Compile Include="Assets\Scripts\AvanzarFase.cs" />
      <Compile Include="Assets\Scripts\BehaviourWithTree.cs" />
+     <Compile Include="Assets\Scripts\Cerrar.cs" />
      <Compile Include="Assets\Scripts\Comentarios.cs" />
      <Compile Include="Assets\Scripts\CreateDBScript.cs" />
+     <Compile Include="Assets\Scripts\CuadroDialogo.cs" />
      <Compile Include="Assets\Scripts\DataService.cs" />
+     <Compile Include="Assets\Scripts\DeleteAlert.cs" />
+     <Compile Include="Assets\Scripts\Evaluador.cs" />
      <Compile Include="Assets\Scripts\ExistingDBScript.cs" />
      <Compile Include="Assets\Scripts\Fase2\3D\Gestos.cs" />
      <Compile Include="Assets\Scripts\Fase2\3D\InstanciaObjetos.cs" />
@@ -122,9 +136,21 @@
      <Compile Include="Assets\Scripts\Fase2\UI tools Scripts\Tools.cs" />
      <Compile Include="Assets\Scripts\Fase2\UI tools Scripts\botones.cs" />
      <Compile Include="Assets\Scripts\Fase2\finalizar.cs" />
+     <Compile Include="Assets\Scripts\Fase6\Carga.cs" />
+     <Compile Include="Assets\Scripts\Fase6\Init.cs" />
+     <Compile Include="Assets\Scripts\Fase6\Modal.cs" />
+     <Compile Include="Assets\Scripts\GyroController.cs" />
+     <Compile Include="Assets\Scripts\ImagePanelViewer.cs" />
+     <Compile Include="Assets\Scripts\MostrarIns.cs" />
+     <Compile Include="Assets\Scripts\MouseBorder.cs" />
      <Compile Include="Assets\Scripts\MoverRotarObjeto3d.cs" />
      <Compile Include="Assets\Scripts\Person.cs" />
+     <Compile Include="Assets\Scripts\ReiniciarNivel.cs" />
      <Compile Include="Assets\Scripts\SeleccionDeColor.cs" />
+     <Compile Include="Assets\Scripts\SituarAvatar.cs" />
+     <Compile Include="Assets\Scripts\Teclado.cs" />
+     <Compile Include="Assets\Scripts\Tutorial\PantallaInstrucciones.cs" />
+     <Compile Include="Assets\Scripts\inicializacion.cs" />
      <Compile Include="Assets\scriptBD\BDCreada.cs" />
      <Compile Include="Assets\scriptBD\BDExistente.cs" />
      <Compile Include="Assets\scriptBD\ServicioDatos.cs" />
@@ -133,6 +159,7 @@
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\VertexLitWithZ.shader" />
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\RenderVideoBackground.shader" />
      <None Include="Assets\license_3rdpartynotice.txt" />
+     <None Include="Assets\Resources\Tutorial\Fase6.txt" />
      <None Include="Assets\Qualcomm Augmented Reality\Shaders\VideoBackground.shader" />
      <None Include="Assets\Editor\QCAR\WebcamProfiles\profiles.xml" />
      <None Include="Assets\readme_SDK.txt" />
@@ -151,10 +178,10 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="SQLite4Unity3d">
- <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Assets/Plugins/SQLite4Unity3d.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Desktop/Proyectos/ModRa/ProjectRA-masterModRA/Assets/Plugins/SQLite4Unity3d.dll</HintPath>
  </Reference>
  <Reference Include="Qualcomm.Vuforia.UnityExtensions">
- <HintPath>C:/Users/surrealismo/Documents/GitHub/RAsE2/Assets/Qualcomm Augmented Reality/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll</HintPath>
+ <HintPath>C:/Users/surrealismo/Desktop/Proyectos/ModRa/ProjectRA-masterModRA/Assets/Qualcomm Augmented Reality/Scripts/Internal/Qualcomm.Vuforia.UnityExtensions.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

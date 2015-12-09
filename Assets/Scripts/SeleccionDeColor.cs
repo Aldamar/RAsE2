@@ -2,8 +2,16 @@
 using System.Collections;
 
 public class SeleccionDeColor : MonoBehaviour {
+private Texture[] texturas;
 
 public GameObject objeto, fondo;
+
+	void Start()
+	{
+		texturas = Resources.LoadAll<Texture> ("texturas");
+	}
+
+	#region colores
 	//Cambia color de los objetos 3D
 	public void Azul(){
 		objeto.GetComponent<Renderer> ().material.color = Color.blue;
@@ -53,4 +61,16 @@ public GameObject objeto, fondo;
 	public void Cafe(){
 		objeto.GetComponent<Renderer> ().material.color = new Color(0.392156862745098f,0.1568627450980392f,0f);
 	}
+	#endregion
+
+	#region materiales
+	//Seleccion de material
+	public void metal(){ //nombres sujetos a cambios
+		objeto.GetComponent<Renderer> ().material.mainTexture = texturas [0];	
+	}
+	public void madera(){
+		objeto.GetComponent<Renderer> ().material.mainTexture = texturas [1];
+	}
+
+	#endregion
 }

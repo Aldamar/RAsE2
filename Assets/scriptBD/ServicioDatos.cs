@@ -50,10 +50,10 @@ public class ServicioDatos {
 		var dbPath = filepath;
 		#endif
 		_conexion = new SQLiteConnection(dbPath, SQLiteOpenFlags.ReadWrite | SQLiteOpenFlags.Create);
-		Debug.Log("Final PATH: " + dbPath);     
+		//Debug.Log("Final PATH: " + dbPath);     
 
 	}
-	public void CrearBD(string img, string tip, float lat, float lon, string pos, string rot, string esc,string c1,string c2,string c3,string c4, string desc){
+	public void CrearBD(string img, string tip, float lat, float lon, string pos, string rot, string esc,string c1,string c2,string c3,string c4, string desc, int clip){
 		//_conexion.DropTable<datos> ();
 		_conexion.CreateTable<datos> ();
 		_conexion.InsertAll (new [] {
@@ -70,7 +70,7 @@ public class ServicioDatos {
 				colorB = c3,
 				colorA = c4,
 				descripcion=desc,
-			}
+				audio = clip,			}
 
 		});
 	}

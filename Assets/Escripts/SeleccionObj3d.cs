@@ -13,6 +13,7 @@ public class SeleccionObj3d : MonoBehaviour {
 //		flecha3.GetComponent<Renderer> ().material.color = Color.yellow;
 	}
 	void OnMouseUp() {
+		Debug.Log ("entra mouseupe");
 		moverObj3d.objeto = transform.gameObject;
 //		objeto.GetComponent<SeleccionDeColor>().objeto = transform.gameObject;
 //		flecha1.GetComponent<RotarX> ().objeto = transform.gameObject;

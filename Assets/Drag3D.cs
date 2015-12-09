@@ -4,10 +4,10 @@ using UnityEngine.EventSystems;
 
 public class Drag3D : MonoBehaviour/*,  IBeginDragHandler, IDragHandler, IEndDragHandler */{
 
+	float tmp;
 
 	private bool dragging = false;
-	private float distance;
-	
+	private float distance ;
 	
 	void OnMouseEnter()
 	{
@@ -21,12 +21,14 @@ public class Drag3D : MonoBehaviour/*,  IBeginDragHandler, IDragHandler, IEndDra
 	
 	void OnMouseDown()
 	{
+
 		distance = Vector3.Distance(transform.position, Camera.main.transform.position);
 		dragging = true;
 	}
 	
 	void OnMouseUp()
 	{
+
 		dragging = false;
 	}
 	

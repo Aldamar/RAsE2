@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 4a03c11870350dc41a003f49f7b091eb
+timeCreated: 1446012060
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: hand_air_pump_part00
+    100004: hand_air_pump_part01
+    100006: hand_air_pump_part02
+    100008: hand_air_pump_part03
+    100010: hand_air_pump_part04
+    100012: hand_air_pump_part05
+    100014: hand_air_pump_part06
+    100016: hand_air_pump_part07
+    100018: hand_air_pump_part08
+    100020: hand_air_pump_part09
+    100022: hand_air_pump_part10
+    100024: hand_air_pump_part11
+    100026: hand_air_pump_part12
+    100028: hand_air_pump_part13
+    100030: hand_air_pump_part14
+    100032: hand_air_pump_part15
+    100034: hand_air_pump_part16
+    100036: hand_air_pump_part17
+    400000: //RootNode
+    400002: hand_air_pump_part00
+    400004: hand_air_pump_part01
+    400006: hand_air_pump_part02
+    400008: hand_air_pump_part03
+    400010: hand_air_pump_part04
+    400012: hand_air_pump_part05
+    400014: hand_air_pump_part06
+    400016: hand_air_pump_part07
+    400018: hand_air_pump_part08
+    400020: hand_air_pump_part09
+    400022: hand_air_pump_part10
+    400024: hand_air_pump_part11
+    400026: hand_air_pump_part12
+    400028: hand_air_pump_part13
+    400030: hand_air_pump_part14
+    400032: hand_air_pump_part15
+    400034: hand_air_pump_part16
+    400036: hand_air_pump_part17
+    2300000: hand_air_pump_part00
+    2300002: hand_air_pump_part01
+    2300004: hand_air_pump_part02
+    2300006: hand_air_pump_part03
+    2300008: hand_air_pump_part04
+    2300010: hand_air_pump_part05
+    2300012: hand_air_pump_part06
+    2300014: hand_air_pump_part07
+    2300016: hand_air_pump_part09
+    2300018: hand_air_pump_part10
+    2300020: hand_air_pump_part11
+    2300022: hand_air_pump_part12
+    2300024: hand_air_pump_part13
+    2300026: hand_air_pump_part14
+    2300028: hand_air_pump_part15
+    2300030: hand_air_pump_part16
+    2300032: hand_air_pump_part17
+    3300000: hand_air_pump_part00
+    3300002: hand_air_pump_part01
+    3300004: hand_air_pump_part02
+    3300006: hand_air_pump_part03
+    3300008: hand_air_pump_part04
+    3300010: hand_air_pump_part05
+    3300012: hand_air_pump_part06
+    3300014: hand_air_pump_part07
+    3300016: hand_air_pump_part09
+    3300018: hand_air_pump_part10
+    3300020: hand_air_pump_part11
+    3300022: hand_air_pump_part12
+    3300024: hand_air_pump_part13
+    3300026: hand_air_pump_part14
+    3300028: hand_air_pump_part15
+    3300030: hand_air_pump_part16
+    3300032: hand_air_pump_part17
+    4300000: hand_air_pump_part00
+    4300002: hand_air_pump_part01
+    4300004: hand_air_pump_part02
+    4300006: hand_air_pump_part03
+    4300008: hand_air_pump_part04
+    4300010: hand_air_pump_part05
+    4300012: hand_air_pump_part06
+    4300014: hand_air_pump_part07
+    4300016: hand_air_pump_part09
+    4300018: hand_air_pump_part10
+    4300020: hand_air_pump_part11
+    4300022: hand_air_pump_part12
+    4300024: hand_air_pump_part13
+    4300026: hand_air_pump_part14
+    4300028: hand_air_pump_part15
+    4300030: hand_air_pump_part16
+    4300032: hand_air_pump_part17
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

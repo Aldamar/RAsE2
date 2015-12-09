@@ -23,6 +23,7 @@ public class CambiarObj3d : MonoBehaviour {
 	public string[] nombreObjetos;
 	public string[] url;
 	public GameObject[] Objetos3D;
+	public GameObject canvas;
 	//...................GeekerX
 	// Use this for initialization
 	void Start() {
@@ -98,6 +99,7 @@ public class CambiarObj3d : MonoBehaviour {
 		objClon.GetComponent<SeleccionObj3d> ().moverObj3d = objetoPadre.GetComponent<MoverRotarObjeto3d> ();
 		objClon.GetComponent<SeleccionObj3d> ().objeto = objetoPadre;
 		objetoPadre.GetComponent<MoverRotarObjeto3d> ().objeto = objClon;
+		canvas.GetComponent<SeleccionDeColor> ().objeto = objClon;
 		//objetoPadre.GetComponent<MoverRotarObjeto3d>().objeto=objClon;
 		objClon.transform.SetParent (tmp.transform);
 
