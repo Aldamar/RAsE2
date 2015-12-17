@@ -1,10 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\RA\ProjectRA-master26Octubre\Assets\Scripts\Fase2\UI tools Scripts\Tools.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\RA\ProjectRA-master26Octubre\Assets\Scripts\Fase2\UI tools Scripts\botones.cs">
     <Files>
       <File FileName="..\..\RA\ProjectRA-master26Octubre\Assets\Scripts\Fase2\UI tools Scripts\botones.cs" Line="1" Column="1" />
-      <File FileName="..\..\RA\ProjectRA-master26Octubre\Assets\Scripts\Fase2\UI tools Scripts\Tools.cs" Line="163" Column="24" />
-      <File FileName="..\..\RA\ProjectRA-master26Octubre\Assets\Scripts\Fase2\Bandera.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
